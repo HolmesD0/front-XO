@@ -1,0 +1,44 @@
+{
+  "name": "react-three-template",
+  "version": "1.0.0",
+  "description": "Matt's react-three-fiber starter.",
+  "keywords": [],
+  "main": "src/index.jsx",
+  "dependencies": {
+    
+    "@react-spring/core": "^9.4.5",
+    "@react-spring/web": "^9.4.5",
+    "@react-three/drei": "^9.14.3",
+    "@react-three/fiber": "^8.0.27",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.3.0",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^0.27.2",
+    "core-js": "^3.24.1",
+    "jwt-decode": "^3.1.2",
+    "moment": "^2.29.4",
+    "react": "^18.2.0",
+    "react-color": "^2.19.3",
+    "react-dom": "^18.2.0",
+    "react-file-base64": "^1.0.3",
+    "react-redux": "^8.0.2",
+    "react-scripts": "5.0.1",
+    "redux": "^4.2.0",
+    "redux-thunk": "^2.4.1",
+    "socket.io-client": "^4.5.1",
+    "three": "^0.141.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
