@@ -103,11 +103,11 @@ function All() {
 		<button onClick={() => socket.emit('session')}>Session</button>
 		<button onClick={() => out()}>Out</button>
 	</div>
-	let deco = <div class="main">
+	let deco = <div className="main">
 		<input type="checkbox" id="chk" aria-hidden="true" />
-		<div class="signup">
+		<div className="signup">
 			<section>
-				<label for="chk" aria-hidden="true">Register</label>
+				<label htmlFor="chk" aria-hidden="true">Register</label>
 				<input type="text" name="user" placeholder="User" required="" onChange={(e) => setInfo({
 					user: e.target.value,
 					email: info.email,
@@ -126,9 +126,9 @@ function All() {
 				<button onClick={() => register()}>Register</button>
 			</section>
 		</div>
-		<div class="login">
+		<div className="login">
 			<section>
-				<label for="chk" aria-hidden="true">Login</label>
+				<label htmlFor="chk" aria-hidden="true">Login</label>
 				<input type="text" name="user_email" placeholder="User or Email" required="" onChange={(e) => setInfo({
 					user: e.target.value,
 					email: e.target.value,
