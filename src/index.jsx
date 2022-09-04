@@ -155,7 +155,7 @@ function All() {
 					is: res.data.is,
 					token: res.data.token
 				});
-				setSocket(io.connect("https://nfefbs.sse.codesandbox.io/"));
+				setSocket(io.connect("https://nfefbs.sse.codesandbox.io"));
 			})
 			.catch(function (err) {
 				alert(err.response.data.message);
@@ -172,7 +172,7 @@ function All() {
 					is: res.data.is,
 					token: res.data.token
 				});
-				setSocket(io.connect("https://nfefbs.sse.codesandbox.io/"));
+				setSocket(io.connect("https://nfefbs.sse.codesandbox.io"));
 			})
 			.catch(function (err) {
 				alert(err.response.data.message);
