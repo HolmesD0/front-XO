@@ -145,7 +145,7 @@ function All() {
 	</div>
 
 	const login = async () => {
-		await axios.post("http://localhost:8000/login", {
+		await axios.post("https://nfefbs.sse.codesandbox.io/login", {
 			user: info.user,
 			email: info.email,
 			password: info.password
@@ -155,14 +155,14 @@ function All() {
 					is: res.data.is,
 					token: res.data.token
 				});
-				setSocket(io.connect("http://localhost:8000"));
+				setSocket(io.connect("https://nfefbs.sse.codesandbox.io/"));
 			})
 			.catch(function (err) {
 				alert(err.response.data.message);
 			});
 	};
 	const register = async () => {
-		await axios.post("http://localhost:8000/register", {
+		await axios.post("https://nfefbs.sse.codesandbox.io/register", {
 			user: info.user,
 			email: info.email,
 			password: info.password
@@ -172,7 +172,7 @@ function All() {
 					is: res.data.is,
 					token: res.data.token
 				});
-				setSocket(io.connect("http://localhost:8000"));
+				setSocket(io.connect("https://nfefbs.sse.codesandbox.io/"));
 			})
 			.catch(function (err) {
 				alert(err.response.data.message);
